@@ -132,11 +132,18 @@
          margin: 10px;
          display: flex;
          flex: 1 1 30%;
+         transition: .3s;
+      }
+
+      .top-vegans-item:hover {
+         transform: translateY(-10px);
+         transition: .3s;
       }
 
       .top-vegans-item img {
          width: 100%;
          box-shadow: 0 0 95px rgba(13, 3, 3, 0.56);
+         transition: .3s;
       }
 
       .bottom-vegans {
@@ -359,7 +366,7 @@
 
       /*----------products------------*/
       .products {
-         padding: 40px 10px;
+         padding: 40px 10px 60px;
       }
 
       .products-title {
@@ -434,6 +441,109 @@
          .products-item {
             flex: 1 1 100% !important;
          }
+
+         .products {
+            padding: 40px 10px;
+         }
+      }
+
+
+
+      /*-----advantages-----*/
+
+      .advantages {
+         padding: 90px 10px 40px;
+         color: var(--mycolor1);
+         background-color: var(--mycolor3);
+         clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+
+      }
+
+      .advantages__container {}
+
+      ._container {}
+
+      .advantage-title {
+         font-size: 30px !important;
+         line-height: 40px !important;
+         text-align: center;
+         color: #fff;
+      }
+
+      .advantage-body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+      }
+
+      .advantage-item {
+         padding: 20px;
+         margin: 10px;
+         flex: 1 1 30%;
+         background-color: var(--mycolor2);
+         text-align: left;
+         clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+         transition: .3s;
+
+      }
+
+      .advantage-item:hover img {
+         transform: scale(1.1);
+         transition: .3s;
+      }
+
+      .advantage-item-top {
+         display: flex;
+         justify-content: start;
+         align-items: center;
+         margin: 10px 0;
+      }
+
+
+      .advantage-item-icon {}
+
+      .advantage-item-icon img {
+         transition: .5s;
+         width: 64px;
+         height: 64px;
+      }
+
+      .advantage-item-title {
+         font-size: 20px !important;
+         font-weight: 600 !important;
+         line-height: 20px !important;
+         padding-left: 30px;
+         display: inline-block;
+         color: var(--mycolor3);
+         margin: 0 !important;
+         transition: .3s;
+      }
+
+      .advantage-item-title::first-letter {
+         color: #fff;
+         font-size: 28px !important;
+         text-transform: uppercase;
+         transition: .3s;
+      }
+
+      .advantage-item:hover .advantage-item-title {
+         color: #fff;
+         transition: .3s;
+      }
+
+      .advantage-item:hover .advantage-item-title::first-letter {
+         color: var(--mycolor3);
+         transition: .3s;
+      }
+
+      .advantage-item-text {
+         color: #fff;
+      }
+
+      @media screen and (max-width: 500px) {
+         .advantages {
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+         }
       }
 
       /*----------review------------*/
@@ -441,8 +551,8 @@
       .review {}
 
       .review-title {
-         font-size: 30px;
-         line-height: 40px;
+         font-size: 30px !important;
+         line-height: 40px !important;
          text-align: center;
       }
 
@@ -539,7 +649,7 @@
             <div class="vegans-bottom bottom-vegans">
                <div class="bottom-vegans-body">
                   <div class="bottom-vegans-title-area">
-                     <h2 class="bottom-vegans-title"> World’s Hottest Destinations for Vegans</h2>
+                     <h2 class="bottom-vegans-title">Декілька слів про нашу компанію</h2>
                   </div>
                   <div class="bottom-vegans-text-area">
                      <p class="bottom-vegans-text">There are many variations of passages of Lorem Ipsum available, but
@@ -559,7 +669,7 @@
       <section class="choose">
          <div class="choose__container _container">
             <div class="choose-body">
-               <h2 class="choose-title">Why Choose Us?</h2>
+               <h2 class="choose-title">Особливості товару </h2>
                <p class="choose-text">there isn't anything embarrassing hidden in the middle of text. All the Lorem
                   Ipsum generators on the Internet tend to repeat predefined</p>
                <div class="choose-content">
@@ -612,7 +722,7 @@
          </div>
       </section>
       <section class="products">
-         <h2 class="products-title">Our Product</h2>
+         <h2 class="products-title">Наші товари</h2>
          <div class="products-body">
             <div class="products-item">
                <img src="img-2/product1.jpg" alt="">
@@ -636,9 +746,53 @@
             </div>
          </div>
       </section>
+      <section class="advantages">
+         <div class="advantages__container _container">
+            <h2 class="advantage-title">Переваги роботи з нами</h2>
+            <div class="advantage-body">
+               <div class="advantage-item">
+                  <div class="advantage-item-top">
+                     <div class="advantage-item-icon"><img src="img-2/advantage1.png" alt=""></div>
+                     <h4 class="advantage-item-title">quality</h4>
+                  </div>
+                  <p class="advantage-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quia
+                     recusandae sint voluptates fuga exercitationem veniam eos iste omnis? Hic reiciendis laudantium
+                     molestias voluptates nesciunt incidunt odio sapiente totam quasi!</p>
+               </div>
+               <div class="advantage-item">
+                  <div class="advantage-item-top">
+                     <div class="advantage-item-icon"><img src="img-2/advantage2.png" alt=""></div>
+                     <h4 class="advantage-item-title">prices</h4>
+                  </div>
+                  <p class="advantage-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quia
+                     recusandae sint voluptates fuga exercitationem veniam eos iste omnis? Hic reiciendis laudantium
+                     molestias voluptates nesciunt incidunt odio sapiente totam quasi!</p>
+               </div>
+               <div class="advantage-item">
+                  <div class="advantage-item-top">
+                     <div class="advantage-item-icon"><img src="img-2/advantage3.png" alt=""></div>
+                     <h4 class="advantage-item-title">support</h4>
+                  </div>
+                  <p class="advantage-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quia
+                     recusandae sint voluptates fuga exercitationem veniam eos iste omnis? Hic reiciendis laudantium
+                     molestias voluptates nesciunt incidunt odio sapiente totam quasi!</p>
+               </div>
+               <div class="advantage-item">
+                  <div class="advantage-item-top">
+                     <div class="advantage-item-icon"><img src="img-2/advantage4.png" alt=""></div>
+                     <h4 class="advantage-item-title">delivery</h4>
+                  </div>
+                  <p class="advantage-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quia
+                     recusandae sint voluptates fuga exercitationem veniam eos iste omnis? Hic reiciendis laudantium
+                     molestias voluptates nesciunt incidunt odio sapiente totam quasi!</p>
+               </div>
+
+            </div>
+         </div>
+      </section>
       <section class="review">
          <div class="review__container container">
-            <h2 class="review-title"> People Says About Farm</h2>
+            <h2 class="review-title">Відгуки наших клієнтів</h2>
 
             <div class="review-body">
                <div class="review-item item-review">
